@@ -3,7 +3,12 @@
   "pageTitle": "Presentation",
   "languageLabel": "Language:",
   "construction": "Under construction...",
-  "viewExploreCity": "View ExploreCity",
+  "viewExploreCity": "View the app (Beta)",
+  "viewDocsExploreCity": "Documentation",
   "development": "Apps in development:",
-  "viewDecimalDates": "Coming soon"
+  "viewDecimalDates": "Coming soon",
+  "viewSmartCart": "Coming soon",
+  "viewToca_Piscina": "Coming soon",
+  "viewDocsToca_Piscina": "Documentation",
+  "viewDescriptionExploreCity": "Discover your ideal city based on your preferences. Choose the criteria that matter most to you and explore the cities that best adapt to you."
 }

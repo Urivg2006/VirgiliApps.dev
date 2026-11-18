@@ -3,7 +3,12 @@
   "pageTitle": "Presentació",
   "languageLabel": "Idioma:",
   "construction": "En construcció...",
-  "viewExploreCity": "Veure ExploreCity",
+  "viewExploreCity": "Veure l'app (Beta)",
+  "viewDocsExploreCity": "Documentació",
   "development": "Apps en desenvolupament:",
-  "viewDecimalDates": "Proximament"
+  "viewDecimalDates": "Proximament",
+  "viewSmartCart": "Proximament",
+  "viewToca_Piscina": "Proximament",
+  "viewDocsToca_Piscina": "Documentació",
+  "viewDescriptionExploreCity": "Descobreix la teva ciutat ideal segons les teves preferències. Tria els criteris que més t'importen i explora les ciutats que més s'adapten a tu."
 }
