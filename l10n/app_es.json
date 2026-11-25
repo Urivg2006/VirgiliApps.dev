@@ -7,9 +7,14 @@
   "viewDocsExploreCity": "Documentación",
   "development": "Aplicaciones en desarrollo:",
   "Documentation": "Documentación",
-  "viewDecimalDates": "Próximamente",
+  "webs": "Webs en desarrollo:",
+  "websDescription": "Próximamente 2027",
+  "viewDecimalDates": "Próximamente 2027",
   "viewSmartCart": "Próximamente",
   "viewToca_Piscina": "Próximamente",
   "viewDocsToca_Piscina": "Documentación",
-  "viewDescriptionExploreCity": "Descubre tu ciudad ideal según tus preferencias. Elige los criterios que más te importan y explora las ciudades que mejor se adapten a ti."
+  "viewDescriptionExploreCity": "Descubre tu ciudad ideal según tus preferencias. Elige los criterios que más te importan y explora las ciudades que mejor se adapten a ti.",
+  "viewDescriptionDecimalDates": "Guarda tus fechas y consúltalas en tiempo real hasta 8 decimales y recibe avisos cuando se acerquen las fechas al día o cuando tengan cumpleaños",
+  "viewDescriptionSmartCart": "Organiza tu lista de la compra, clasifícala por tipo y por marca o supermercado, marca los artículos que ya tienes en el carrito",
+  "viewDescriptionToca_Piscina": "Gestiona las reservas de la piscina, bloqueando los horarios disponibles y fechas disponibles, bloqueando usuarios o limitando horas de los usuarios"
 }

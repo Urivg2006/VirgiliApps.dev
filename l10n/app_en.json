@@ -6,9 +6,14 @@
   "viewExploreCity": "View the app (Beta)",
   "viewDocsExploreCity": "Documentation",
   "development": "Apps in development:",
-  "viewDecimalDates": "Coming soon",
+  "viewDecimalDates": "Coming soon 2027",
   "viewSmartCart": "Coming soon",
   "viewToca_Piscina": "Coming soon",
   "viewDocsToca_Piscina": "Documentation",
-  "viewDescriptionExploreCity": "Discover your ideal city based on your preferences. Choose the criteria that matter most to you and explore the cities that best adapt to you."
+  "viewDescriptionExploreCity": "Discover your ideal city based on your preferences. Choose the criteria that matter most to you and explore the cities that best adapt to you.",
+  "viewDescriptionDecimalDates": "Save your dates and check them in real time up to 8 decimals and receive notifications when the dates approach the day or when they have birthdays",
+  "viewDescriptionSmartCart": "Organize your shopping list, classify it by type and by brand or supermarket, mark the items you already have in the cart",
+  "viewDescriptionToca_Piscina": "Manage the pool reservations, blocking available time slots and dates, blocking users or limiting their hours",
+  "webs": "Webs in development:",
+  "websDescription": "Coming soon 2027"
 }

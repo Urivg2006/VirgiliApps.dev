@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExploreCity — Documentació</title>
+  <link rel="icon" type="image/png" href="assets/Icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #0f172a;
+      border-radius: 10px;
+    }
+
+    .brand-logo {
+      display: block;
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      margin-inline: auto;
+    }
+
+    .markdown-content {
+      overflow-wrap: anywhere;
+    }
+
+    .markdown-content h1,
+    .markdown-content h2,
+    .markdown-content h3,
+    .markdown-content h4 {
+      margin-top: 1.75rem;
+      margin-bottom: 0.75rem;
+      color: #0f172a;
+    }
+
+    .markdown-content h1 {
+      margin-top: 0;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+    }
+
+    .markdown-content h2 {
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    .markdown-content table {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      border-collapse: collapse;
+      white-space: nowrap;
+    }
+
+    .markdown-content th,
+    .markdown-content td {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #dee2e6;
+    }
+
+    .markdown-content pre {
+      padding: 1rem;
+      overflow-x: auto;
+      border-radius: 0.5rem;
+      background-color: #e9ecef;
+    }
+
+    .markdown-content code {
+      color: #6f42c1;
+    }
+  </style>
+</head>
+
+<body class="px-2 py-3 px-md-4">
+  <main class="container mt-3 mt-md-5">
+    <div class="p-3 p-md-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid px-0 py-3 py-md-5">
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3 mb-4">
+          <a href="./index.html" class="btn btn-outline-primary">← Tornar a VirgiliApps</a>
+          <div class="d-flex align-items-center">
+            <label for="languageSelect" class="me-2 fw-semibold">Idioma:</label>
+            <select id="languageSelect" class="form-select form-select-sm w-auto">
+              <option value="ca">Català</option>
+              <option value="es">Español</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+        </div>
+
+        <img src="assets/Logo.png" alt="VirgiliApps" class="img-fluid brand-logo mb-4">
+        <article id="readmeContent" class="markdown-content" aria-live="polite">
+          <p class="text-center text-secondary">Carregant la documentació...</p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+  <script>
+    const readmeFiles = {
+      ca: "./READMES/DecimalDates/README_Ca.md",
+      es: "./READMES/DecimalDates/README_Es.md",
+      en: "./READMES/DecimalDates/README_En.md"
+    };
+    const languageSelect = document.getElementById("languageSelect");
+    const readmeContent = document.getElementById("readmeContent");
+
+    async function loadReadme(language) {
+      readmeContent.innerHTML = '<p class="text-center text-secondary">Carregant la documentació...</p>';
+
+      try {
+        const response = await fetch(readmeFiles[language]);
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+
+        const markdown = await response.text();
+        readmeContent.innerHTML = DOMPurify.sanitize(marked.parse(markdown));
+        document.documentElement.lang = language;
+      } catch (error) {
+        const message = document.createElement("div");
+        message.className = "alert alert-danger";
+        message.textContent = `No s'ha pogut carregar la documentació (${language}): ${error.message}`;
+        readmeContent.replaceChildren(message);
+      }
+    }
+
+    languageSelect.addEventListener("change", () => loadReadme(languageSelect.value));
+    loadReadme(languageSelect.value);
+  </script>
+</body>
+
+</html>

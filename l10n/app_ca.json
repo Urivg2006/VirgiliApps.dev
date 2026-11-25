@@ -6,9 +6,14 @@
   "viewExploreCity": "Veure l'app (Beta)",
   "viewDocsExploreCity": "Documentació",
   "development": "Apps en desenvolupament:",
-  "viewDecimalDates": "Proximament",
+  "viewDecimalDates": "Proximament 2027",
   "viewSmartCart": "Proximament",
   "viewToca_Piscina": "Proximament",
   "viewDocsToca_Piscina": "Documentació",
-  "viewDescriptionExploreCity": "Descobreix la teva ciutat ideal segons les teves preferències. Tria els criteris que més t'importen i explora les ciutats que més s'adapten a tu."
+  "viewDescriptionExploreCity": "Descobreix la teva ciutat ideal segons les teves preferències. Tria els criteris que més t'importen i explora les ciutats que més s'adapten a tu.",
+  "viewDescriptionDecimalDates": "Guarda les teves dates i consulta-les en temps real fins a 8 decimals i reb avisos quan s'acostin les dates al dia o quan facin anys",
+  "viewDescriptionSmartCart": "Organitza la teva llista de la compra classifica-la per tipus i per marca o supermercat, marca els articles que ja tens al carret",
+  "viewDescriptionToca_Piscina": "Gestiona les reserves de la piscina, bloquejant els horaris disponibles i dates disponibles, bloquejant usuaris o limitant hores dels usuaris",
+  "webs": "Webs en desenvolupament:",
+  "websDescription": "Proximament 2027"
 }
